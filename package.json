@@ -4,16 +4,27 @@
   "description": "MEAN stack authentication app",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ker0h/meanauthapp.git"
+    "url": "https://github.com/Ker0h/meanauthapp.git"
   },
   "author": "Ker0h",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ker0h/meanauthapp/issues"
   },
-  "homepage": "https://github.com/Ker0h/meanauthapp#readme"
+  "homepage": "https://github.com/Ker0h/meanauthapp#readme",
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "bcryptjs": "*",
+    "cors": "*",
+    "jsonwebtoken": "*",
+    "body-parser": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  }
 }
