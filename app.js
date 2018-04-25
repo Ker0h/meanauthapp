@@ -31,7 +31,7 @@ database_connection();
 
 //Index
 app.get('/', (req, res) => {
-    res.send('Je moeder');
+    res.render("./test.html");
 });
 
 //Listening to specified port
