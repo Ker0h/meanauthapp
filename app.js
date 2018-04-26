@@ -21,6 +21,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 //BodyParser Middelware
 app.use(bodyParser.json());
 
+//Passport Middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
 //Routing
 
 //User routes
@@ -31,7 +35,7 @@ database_connection();
 
 //Index
 app.get('/', (req, res) => {
-    res.send('Je moeder');
+    res.send('Index');
 });
 
 //Listening to specified port
